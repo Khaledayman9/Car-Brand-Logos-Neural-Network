@@ -32,21 +32,21 @@ from matplotlib.pyplot import figure
 from PIL import Image
 
 #../input/car-brand-logos/Car_Brand_Logos/Train/hyundai/images141.jpg"
-hyundai_logo = cv2.imread("C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/hyundai/images141.jpg")
+hyundai_logo = cv2.imread("../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/hyundai/images141.jpg")
 hyundai_logo = cv2.cvtColor(hyundai_logo, cv2.COLOR_BGR2RGB)
-lexus_logo  = cv2.imread("C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/lexus/images103.jpg")
+lexus_logo  = cv2.imread("../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/lexus/images103.jpg")
 lexus_logo = cv2.cvtColor(lexus_logo, cv2.COLOR_BGR2RGB)
-mazda_logo = cv2.imread("C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/mazda/0002.jpg")
+mazda_logo = cv2.imread("../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/mazda/0002.jpg")
 mazda_logo = cv2.cvtColor(mazda_logo, cv2.COLOR_BGR2RGB)
-mercedes_logo = cv2.imread("C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/mercedes/images12.jpg")
+mercedes_logo = cv2.imread("../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/mercedes/images12.jpg")
 mercedes_logo = cv2.cvtColor(mercedes_logo, cv2.COLOR_BGR2RGB)
-opel_logo = cv2.imread("C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/opel/00000aaa1.jpg")
+opel_logo = cv2.imread("../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/opel/00000aaa1.jpg")
 opel_logo= cv2.cvtColor(opel_logo, cv2.COLOR_BGR2RGB)
-skoda_logo = cv2.imread("C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/skoda/images156.jpg")
+skoda_logo = cv2.imread("../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/skoda/images156.jpg")
 skoda_logo= cv2.cvtColor(skoda_logo, cv2.COLOR_BGR2RGB)
-toyota_logo = cv2.imread("C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/toyota/images153.jpg")
+toyota_logo = cv2.imread("../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/toyota/images153.jpg")
 toyota_logo= cv2.cvtColor(toyota_logo, cv2.COLOR_BGR2RGB)
-volkswagen_logo = cv2.imread("C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/volkswagen/images137.jpg")
+volkswagen_logo = cv2.imread("../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/volkswagen/images137.jpg")
 volkswagen_logo = cv2.cvtColor(volkswagen_logo, cv2.COLOR_BGR2RGB)
 
 
@@ -68,7 +68,7 @@ print('width: ', volkswagen_logo.shape[1])
 def AverageFunct(list):
     return sum(list)/len(list)
 
-path = "C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/"    
+path = "../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/"    
 listdir = os.listdir(path)
 ratios_sub = []
 ratios = []
@@ -89,8 +89,8 @@ height = int(width*ratios_average)
 input_shape = (height,width)
 print(input_shape)
 img_width,img_height=width,height 
-training_data_dir = "C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Train/"    
-testing_data_dir = "C:/Users/User/Desktop/Car_Logos_Neural_Net/Car_Brand_Logos/Test/"
+training_data_dir = "../input/Car_Logos_Neural_Net/Car_Brand_Logos/Train/"    
+testing_data_dir = "../input/Car_Logos_Neural_Net/Car_Brand_Logos/Test/"
 number_of_classes = 8
 batch_size = 8
 epochs = 12
