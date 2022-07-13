@@ -9,3 +9,8 @@ A Neural Network that is implemented to find out the brand name of a car.
 
 
 
+# Technologies:
+Python 
+
+# Set up:
+Download the .py file and run it in any Python IDE.
