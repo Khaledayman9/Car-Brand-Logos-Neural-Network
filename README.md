@@ -7,7 +7,7 @@ A Neural Network that is implemented to find out the brand name of a car.
 
 2- The data set contains only 8 car brands (skoda, volkswagen, mercedes, mazda, toyota, hyundai, opel, lexus) and it can take more car brands but for the sake of simplicity we only chose 8 car brands.
 
-
+3= Training and validation data can be found here: https://drive.google.com/drive/folders/15UjAhFShO39O0F6rL3q62rVolVztJLcf?usp=sharing
 
 # Technologies:
 Python 
